@@ -2,7 +2,25 @@
 
 Personal note of fullstack react.
 
-# 1. First react application
+# P.1 Your first React Web Application 
+
+## Summary
+
+ 1. We think about and organize our React apps as components
+
+ 2. UsingJSXinsidetherendermethod
+
+ 3. Data flows from parent to children through props
+
+ 4. Event flows from children to parent through functions
+
+ 5. Utilizing React lifecycle methods
+
+ 6. Stateful components and how state is different from props
+
+ 7. How to manipulate state while treating it as immutable
+
+## Contents
 
 - `render()` is the only required method for a React component.
 
@@ -32,4 +50,25 @@ class HelloWorld extends React.Component { render() { return        (<p>Hello, w
 
 - `key` property needs to be unique per React component in a list.
 
--
+- While the child can read its props, it can’t modify them. A child does not own its props.
+
+- Data changes come from the “top” of the app and are propagated “downwards” through its various components.
+
+- We can pass down functions as props too.
+
+- In JavaScript, the special this variable has a different binding depending on the context.
+
+- For the render() function, React binds this to the component for us. Any time we define our own custom component methods, we have to manually bind this to the component ourselves.
+
+- When the state or props of a component update, the component will re-render itself.
+Every React component is rendered as a function of its this.props and this.state. 
+
+- state is owned by the component.
+
+- React specifies a set of lifecycle methods.
+
+- The only time we can modify the state in this manner is in constructor(). For all state modifications after the initial state, React provides components the method this.setState().
+
+# P.56 Components
+
+
