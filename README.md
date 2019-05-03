@@ -71,4 +71,29 @@ Every React component is rendered as a function of its this.props and this.state
 
 # P.56 Components
 
+- When you visit a website, assets are the files that your browser downloads and uses to display the page. index.html is delivered to the browser and inside its head tags it specifies which additional files from the server the browser needs to download.
+
+- load in the dependencies within the head tags (the assets).
+
+- Inside of body we have a few elements.
+
+- <div> is where we will ultimately mount our React app.
+
+- <script> tag is where we instruct the browser to load app.js into the page.
+
+- When developing a React app from scratch:
+
+1. Break the app into components
+
+2. Build a static version of the app
+
+3. Determine what should be stateful
+
+4. Determine in which component each piece of state should live 5. Hard-code initial states
+
+6. Add inverse data flow
+
+7. Add server communication
+
+
 
